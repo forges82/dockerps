@@ -28,6 +28,8 @@ services:
     environment:
       - MYSQL_ROOT_PASSWORD=root
       - MYSQL_DATABASE=prestashop
+    ports: 
+      - 82:3306
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
